@@ -61,21 +61,21 @@ if __name__ == "__main__":
     parser.add_argument(
         "--resize",
         type=int,
-        default = 512,
+        default = 360,
         help="resize to ",
     )
       
     parser.add_argument(
         "--device",
         type=str,
-        default="cpu",
+        default="cuda",
         help="specify the device for inference (cpu, cuda, cuda:x)",
     )
       
     parser.add_argument(
         "--steps",
         type=int,
-        default=50,
+        default=25,
         help="number of ddim sampling steps",
     )
     
