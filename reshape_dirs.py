@@ -16,6 +16,8 @@ if __name__ == "__main__":
 
     for split_file_name in SPLIT_DIR.glob("*.txt"):
         split_name = split_file_name.stem
+        if split_name == "training":
+            continue
         split_folder = SAVE_DIR / split_name
         split_folder.mkdir(parents=True, exist_ok=True)
 
